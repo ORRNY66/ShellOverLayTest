@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:shellOverlay="clr-namespace:ShellOverLayTest.Views.Controls.ShellOverlay;assembly=ShellOverLayTest"
+       Title="ShellOverLayTest"
+       x:Class="ShellOverLayTest.AppShell"
+       Shell.FlyoutBehavior="Disabled"
+       Shell.TabBarIsVisible="False"
+       Shell.NavBarIsVisible="False">
+
+    <shellOverlay:ShellOverlay x:Name="Overlay">
+        <shellOverlay:ShellOverlay.Content>
+            <Grid x:Name="GridRoot"  
+                  VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand" 
+                  BackgroundColor="Red">
+
+            </Grid>
+        </shellOverlay:ShellOverlay.Content>
+    </shellOverlay:ShellOverlay>
+
+</Shell>
